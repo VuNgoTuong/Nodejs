@@ -1,0 +1,31 @@
+POST http://localhost:5000/admin/auth/register 
+Content-Type: application/json
+
+{
+    "username": "vu321",
+    "password": "vu321",
+    "email": "tuongvutb@gmail.com",
+    "name": "ngo tuong vu",
+    "mobileNo": "0354161610"
+}
+
+###
+POST http://localhost:5000/admin/auth/login
+Content-Type: application/json
+
+{
+    "username": "0354161610",
+    "password": "vu321"
+}
+
+###
+GET http://localhost:5000/admin/user/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTcsInVzZXJuYW1lIjoiMDM1NDE2MTYxMCIsImlhdCI6MTY4MjUzNjQ2MSwiZXhwIjoxNjgyNTM2NTIxfQ.Xg6BuYACWGzcGlYzF14CWr01qJ1avRzrlx-VX4HLgoA
+
+###
+POST http://localhost:5000/admin/auth/refresh_Token
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsInVzZXJuYW1lIjoiMDM1NDE2MTYxOSIsImlhdCI6MTY4MjU1ODA3MSwiZXhwIjoxNjgzMTU4MDcxfQ.Rsfc88ZU-typFZF06gFvs9RmbleW8SjZAqPS3utQXu8
+
+
